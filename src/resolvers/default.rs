@@ -8,6 +8,7 @@ use x25519_dalek as x25519;
 use crate::types::{Cipher, Dh, Hash, Random};
 use crate::constants::TAGLEN;
 use crate::params::{CipherChoice, DHChoice, HashChoice};
+use alloc::boxed::Box;
 use std::io::{Cursor, Write};
 use super::CryptoResolver;
 
